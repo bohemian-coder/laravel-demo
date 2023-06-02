@@ -6,5 +6,5 @@ Base commands :
 
 ``` composer install ```
  ``` php artisan migrate ```
- ``` pgp artisan db:seed```
+ ``` php artisan db:seed```
 
