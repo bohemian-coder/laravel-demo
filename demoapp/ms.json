@@ -1,0 +1,253 @@
+[
+    {
+        "Id": "22923f9caff7995129557edc133c8710202e357d3d9f5af933aec2d5ce09280b",
+        "Created": "2023-06-03T20:43:52.46291168Z",
+        "Path": "docker-entrypoint.sh",
+        "Args": [
+            "mysqld"
+        ],
+        "State": {
+            "Status": "running",
+            "Running": true,
+            "Paused": false,
+            "Restarting": false,
+            "OOMKilled": false,
+            "Dead": false,
+            "Pid": 75470,
+            "ExitCode": 0,
+            "Error": "",
+            "StartedAt": "2023-06-03T20:43:53.113935763Z",
+            "FinishedAt": "0001-01-01T00:00:00Z"
+        },
+        "Image": "sha256:b3077e10c878f57a4beaa0255cb581855b32118f5c2a8eef0b2c21373644541f",
+        "ResolvConfPath": "/var/lib/docker/containers/22923f9caff7995129557edc133c8710202e357d3d9f5af933aec2d5ce09280b/resolv.conf",
+        "HostnamePath": "/var/lib/docker/containers/22923f9caff7995129557edc133c8710202e357d3d9f5af933aec2d5ce09280b/hostname",
+        "HostsPath": "/var/lib/docker/containers/22923f9caff7995129557edc133c8710202e357d3d9f5af933aec2d5ce09280b/hosts",
+        "LogPath": "/var/lib/docker/containers/22923f9caff7995129557edc133c8710202e357d3d9f5af933aec2d5ce09280b/22923f9caff7995129557edc133c8710202e357d3d9f5af933aec2d5ce09280b-json.log",
+        "Name": "/Laravel_mysql",
+        "RestartCount": 0,
+        "Driver": "overlay2",
+        "Platform": "linux",
+        "MountLabel": "",
+        "ProcessLabel": "",
+        "AppArmorProfile": "",
+        "ExecIDs": null,
+        "HostConfig": {
+            "Binds": [
+                "/Users/maybellemo/Documents/Education/MyGitHub/laravel-demo/demoapp/docker/mysql:/var/lib/mysql:rw"
+            ],
+            "ContainerIDFile": "",
+            "LogConfig": {
+                "Type": "json-file",
+                "Config": {}
+            },
+            "NetworkMode": "demoapp_webapp",
+            "PortBindings": {
+                "3306/tcp": [
+                    {
+                        "HostIp": "",
+                        "HostPort": "8800"
+                    }
+                ]
+            },
+            "RestartPolicy": {
+                "Name": "unless-stopped",
+                "MaximumRetryCount": 0
+            },
+            "AutoRemove": false,
+            "VolumeDriver": "",
+            "VolumesFrom": null,
+            "CapAdd": null,
+            "CapDrop": null,
+            "CgroupnsMode": "private",
+            "Dns": null,
+            "DnsOptions": null,
+            "DnsSearch": null,
+            "ExtraHosts": [],
+            "GroupAdd": null,
+            "IpcMode": "private",
+            "Cgroup": "",
+            "Links": null,
+            "OomScoreAdj": 0,
+            "PidMode": "",
+            "Privileged": false,
+            "PublishAllPorts": false,
+            "ReadonlyRootfs": false,
+            "SecurityOpt": null,
+            "UTSMode": "",
+            "UsernsMode": "",
+            "ShmSize": 67108864,
+            "Runtime": "runc",
+            "ConsoleSize": [
+                0,
+                0
+            ],
+            "Isolation": "",
+            "CpuShares": 0,
+            "Memory": 0,
+            "NanoCpus": 0,
+            "CgroupParent": "",
+            "BlkioWeight": 0,
+            "BlkioWeightDevice": null,
+            "BlkioDeviceReadBps": null,
+            "BlkioDeviceWriteBps": null,
+            "BlkioDeviceReadIOps": null,
+            "BlkioDeviceWriteIOps": null,
+            "CpuPeriod": 0,
+            "CpuQuota": 0,
+            "CpuRealtimePeriod": 0,
+            "CpuRealtimeRuntime": 0,
+            "CpusetCpus": "",
+            "CpusetMems": "",
+            "Devices": null,
+            "DeviceCgroupRules": null,
+            "DeviceRequests": null,
+            "KernelMemory": 0,
+            "KernelMemoryTCP": 0,
+            "MemoryReservation": 0,
+            "MemorySwap": 0,
+            "MemorySwappiness": null,
+            "OomKillDisable": null,
+            "PidsLimit": null,
+            "Ulimits": null,
+            "CpuCount": 0,
+            "CpuPercent": 0,
+            "IOMaximumIOps": 0,
+            "IOMaximumBandwidth": 0,
+            "MaskedPaths": [
+                "/proc/asound",
+                "/proc/acpi",
+                "/proc/kcore",
+                "/proc/keys",
+                "/proc/latency_stats",
+                "/proc/timer_list",
+                "/proc/timer_stats",
+                "/proc/sched_debug",
+                "/proc/scsi",
+                "/sys/firmware"
+            ],
+            "ReadonlyPaths": [
+                "/proc/bus",
+                "/proc/fs",
+                "/proc/irq",
+                "/proc/sys",
+                "/proc/sysrq-trigger"
+            ]
+        },
+        "GraphDriver": {
+            "Data": {
+                "LowerDir": "/var/lib/docker/overlay2/a483b9c771d1479f4f61df31ee85073ca0e07e1bef9d0c5101ad61f4588c2979-init/diff:/var/lib/docker/overlay2/e6a501c6a67850ce185e5741a0f1b97503f7a1dc7a2e98c2df74f276b7d93fe7/diff:/var/lib/docker/overlay2/a90a3937cdc1eb0019dffebf3a7f3b26f4c67a2021c8bcdd86b1f91214339f0c/diff:/var/lib/docker/overlay2/5136499fbd60cbc1630eaa77f0b1e5a6159dee1d6be80bceed70398b0a993e6c/diff:/var/lib/docker/overlay2/e8a48a05ef6daee2f445a83866437d91f9d9d98ff802c414ec7aed5fa7a68d60/diff:/var/lib/docker/overlay2/d9250414d634c90d37143d7c0a11b157a78ffe7d8aea90b49b76235e04397dc0/diff:/var/lib/docker/overlay2/1c15c0a616ba8bf0cc34d9b1d5576c4140723f3f40f7314d2eaf21845211286a/diff:/var/lib/docker/overlay2/28e666d16b8d033ff322e2da601cd2001712c58e3d9b4699aff77e00767e0b20/diff:/var/lib/docker/overlay2/36f3b96ad509ffb81c36991c14dd7c70c72e4f3665cf207bda833e688e152dac/diff:/var/lib/docker/overlay2/e1e2444353118f460a54c9345167e5e25ce30b4af303ff98a0001a4efff350ce/diff:/var/lib/docker/overlay2/41e9edb97a21ffab090ba590b0981d5cf5dfa1187136be0ff614f40b50f71895/diff:/var/lib/docker/overlay2/5621f0d22e9f432eda412f9b4f0698b547e9650111945ea8ac5f1e332007a642/diff",
+                "MergedDir": "/var/lib/docker/overlay2/a483b9c771d1479f4f61df31ee85073ca0e07e1bef9d0c5101ad61f4588c2979/merged",
+                "UpperDir": "/var/lib/docker/overlay2/a483b9c771d1479f4f61df31ee85073ca0e07e1bef9d0c5101ad61f4588c2979/diff",
+                "WorkDir": "/var/lib/docker/overlay2/a483b9c771d1479f4f61df31ee85073ca0e07e1bef9d0c5101ad61f4588c2979/work"
+            },
+            "Name": "overlay2"
+        },
+        "Mounts": [
+            {
+                "Type": "bind",
+                "Source": "/Users/maybellemo/Documents/Education/MyGitHub/laravel-demo/demoapp/docker/mysql",
+                "Destination": "/var/lib/mysql",
+                "Mode": "rw",
+                "RW": true,
+                "Propagation": "rprivate"
+            }
+        ],
+        "Config": {
+            "Hostname": "22923f9caff7",
+            "Domainname": "",
+            "User": "",
+            "AttachStdin": false,
+            "AttachStdout": true,
+            "AttachStderr": true,
+            "ExposedPorts": {
+                "3306/tcp": {},
+                "33060/tcp": {}
+            },
+            "Tty": false,
+            "OpenStdin": false,
+            "StdinOnce": false,
+            "Env": [
+                "MYSQL_DATABASE=laraveldemo",
+                "MYSQL_ROOT_PASSWORD=root",
+                "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                "GOSU_VERSION=1.16",
+                "MYSQL_MAJOR=8.0",
+                "MYSQL_VERSION=8.0.33-1.el8",
+                "MYSQL_SHELL_VERSION=8.0.33-1.el8"
+            ],
+            "Cmd": [
+                "mysqld"
+            ],
+            "Image": "mysql:latest",
+            "Volumes": {
+                "/var/lib/mysql": {}
+            },
+            "WorkingDir": "",
+            "Entrypoint": [
+                "docker-entrypoint.sh"
+            ],
+            "OnBuild": null,
+            "Labels": {
+                "com.docker.compose.config-hash": "8ea9c0b0465eb9b7122dcf932617b7ca59377d979440c25f43fe027dca8040db",
+                "com.docker.compose.container-number": "1",
+                "com.docker.compose.depends_on": "",
+                "com.docker.compose.image": "sha256:b3077e10c878f57a4beaa0255cb581855b32118f5c2a8eef0b2c21373644541f",
+                "com.docker.compose.oneoff": "False",
+                "com.docker.compose.project": "demoapp",
+                "com.docker.compose.project.config_files": "/Users/maybellemo/Documents/Education/MyGitHub/laravel-demo/demoapp/docker-compose.yml",
+                "com.docker.compose.project.working_dir": "/Users/maybellemo/Documents/Education/MyGitHub/laravel-demo/demoapp",
+                "com.docker.compose.service": "mysql",
+                "com.docker.compose.version": "2.15.1"
+            }
+        },
+        "NetworkSettings": {
+            "Bridge": "",
+            "SandboxID": "dd6c5ca4eef7aaa6bbdcdc552c93915a9d0259e704a6eb37dbdd23a1c9e9055b",
+            "HairpinMode": false,
+            "LinkLocalIPv6Address": "",
+            "LinkLocalIPv6PrefixLen": 0,
+            "Ports": {
+                "3306/tcp": [
+                    {
+                        "HostIp": "0.0.0.0",
+                        "HostPort": "8800"
+                    }
+                ],
+                "33060/tcp": null
+            },
+            "SandboxKey": "/var/run/docker/netns/dd6c5ca4eef7",
+            "SecondaryIPAddresses": null,
+            "SecondaryIPv6Addresses": null,
+            "EndpointID": "",
+            "Gateway": "",
+            "GlobalIPv6Address": "",
+            "GlobalIPv6PrefixLen": 0,
+            "IPAddress": "",
+            "IPPrefixLen": 0,
+            "IPv6Gateway": "",
+            "MacAddress": "",
+            "Networks": {
+                "demoapp_webapp": {
+                    "IPAMConfig": null,
+                    "Links": null,
+                    "Aliases": [
+                        "Laravel_mysql",
+                        "mysql",
+                        "22923f9caff7"
+                    ],
+                    "NetworkID": "6f87843cf0fbf32d4709bc3e94491a30bd6a0887f93c719c6d3383599d23d30f",
+                    "EndpointID": "4f6253219f5e72f841c01c33d4146a79a565517a7e89085d7caf20b3badc3e24",
+                    "Gateway": "172.31.0.1",
+                    "IPAddress": "172.31.0.2",
+                    "IPPrefixLen": 16,
+                    "IPv6Gateway": "",
+                    "GlobalIPv6Address": "",
+                    "GlobalIPv6PrefixLen": 0,
+                    "MacAddress": "02:42:ac:1f:00:02",
+                    "DriverOpts": null
+                }
+            }
+        }
+    }
+]

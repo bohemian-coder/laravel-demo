@@ -1,0 +1,55 @@
+version: '3.8'
+
+services:
+  httpd:
+    platform: linux/x86_64
+    image: httpd:latest
+    container_name: ${APP_NAME}_apache
+    ports:
+      - "8000:80"
+    links:
+      - php
+    volumes:
+      - .:/var/www/html
+      - ./docker/httpd/site.conf:/etc/apache2/sites-available/000-default.conf:rw
+      # - ./docker/httpd/site.conf:/usr/local/apache2/conf/httpd.conf:rw
+      - ./docker/logs/httpd:/var/logs/apache2:rw
+    depends_on:
+      - php
+      - mysql
+    networks:
+      - webapp
+    
+  php:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: ${APP_NAME}_php
+    volumes:
+      - .:/var/www/html
+    ports:
+      - "9001:9000"
+    networks:
+      - webapp
+    
+  mysql:
+    #platform: linux/x86_64
+    image: mysql:latest
+    ports:
+      - "8800:3306"
+    container_name: ${APP_NAME}_mysql
+    restart: unless-stopped
+    
+    environment:
+      MYSQL_DATABASE: ${DB_DATABASE}
+      MYSQL_ROOT_PASSWORD: ${DB_PASSWORD}
+      # MYSQL_USER: root
+      # MYSQL_PASSWORD: secret
+
+    volumes:
+      - ./docker/mysql:/var/lib/mysql/
+    networks:
+      - webapp
+
+networks:
+  webapp:
