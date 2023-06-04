@@ -1,5 +1,5 @@
 # laravel-demo
-A simple laravel app which dockerized and deployed to kubernetes -> https://github.com/bohemian-coder/dockerize-laravel-demo
+A simple laravel app dockerized and deployed to kubernetes -> https://github.com/bohemian-coder/dockerize-laravel-demo
 To run this you need : PHP, MySQL, Apache and Composer.
 
 Base commands :
