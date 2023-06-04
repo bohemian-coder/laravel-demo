@@ -17,6 +17,10 @@ RUN php -r "unlink('composer-setup.php');"
 # COPY docker/httpd/site.conf /etc/apache2/conf.d/laravel.conf
 # RUN ln -s /etc/apache2/conf.d/laravel.conf /etc/apache2/conf.d/default.conf
 
+# Setup Laravel migrations & seed data
+# RUN php artisan migrate
+# RUN php artisan db:seed
+
 # Set document root
 WORKDIR /var/www/html
 
