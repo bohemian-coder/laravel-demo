@@ -1,5 +1,5 @@
 # laravel-demo
-A simple laravel app which we will dockerize and deploy to kubernetes -> https://github.com/bohemian-coder/dockerize-laravel-demo
+A simple laravel app which dockerized and deployed to kubernetes -> https://github.com/bohemian-coder/dockerize-laravel-demo
 To run this you need : PHP, MySQL, Apache and Composer.
 
 Base commands :
@@ -8,3 +8,4 @@ Base commands :
  ``` php artisan migrate ```
  ``` php artisan db:seed```
 
+Each branch represents a different stage of the process 
