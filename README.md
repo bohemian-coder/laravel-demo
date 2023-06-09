@@ -1,8 +1,6 @@
 # laravel-docker-kubernetes
 
-Laravel application containerized and deployed to kubernetes.
-
-DB to backend communication between containers and replicated on separate pods
+Multi-tier sample Laravel application, containerized and deployed to kubernetes.
 
 To run this you need : 
 - PHP
